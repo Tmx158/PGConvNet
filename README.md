@@ -22,6 +22,8 @@ The PGCBlock dynamically adapts to the random positioning of missing values by e
 
 ## Main Results
 PGConvNet has demonstrated consistent state-of-the-art performance in time series imputation tasks, significantly outperforming existing models, particularly under high rates of missing data.
+![image](https://github.com/user-attachments/assets/8d81e0a3-1a3a-4893-8e1b-6219c793295f)
+
 
 ## Getting Started
 To use PGConvNet, follow these simple steps:
