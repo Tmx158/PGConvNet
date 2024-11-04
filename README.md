@@ -1,4 +1,4 @@
-# PGConvNet: A Multi-Scale Feature Embedding Framework for Time Series Imputation
+# PGConvNet: A Multi-Scale Feature Embedding Framework Using Grouped and Parametric Convolutions for Efficient Time Series Imputation
 
 🤗🤗🤗Welcome to the PGConvNet repository! This project presents an efficient solution for time series imputation using a novel convolutional architecture designed specifically for handling missing values in multivariate time series data.
 
