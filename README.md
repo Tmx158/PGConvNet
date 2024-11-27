@@ -1,12 +1,22 @@
+
+
+
 # PGConvNet: A Multi-Scale Feature Embedding Framework Using Grouped and Parametric Convolutions for Efficient Time Series Imputation
 
 🤗🤗🤗Welcome to the PGConvNet repository! This project presents an efficient solution for time series imputation using a novel convolutional architecture designed specifically for handling missing values in multivariate time series data.
+![figure2](https://github.com/user-attachments/assets/a24d45db-605e-40a3-a99d-3cd9bdd040a7)
 
 ## Introduction to PGConvNet
 
-🔎🔎🔎PGConvNet is a state-of-the-art model that leverages a two-stage architecture to effectively capture temporal and inter-variable dependencies. By transforming 1D time series data into a 2D representation, it enhances the model's ability to process complex interactions across multiple variables, ensuring robust imputation performance.
-![image](https://github.com/user-attachments/assets/4d7b458e-3581-4d5c-8975-00e172f18cb6)
+🧸🧸🧸Multivariate time series data are crucial in various fields, such as finance, healthcare, and environmental monitoring, where accurate imputation is essential for decision-making. However, handling missing values in such datasets is challenging, especially when missing data points occur randomly across time series.Recent experiments on datasets like Weather, Electricity, and ETTh1 reveal strong correlations between neighboring variables, as shown in the Pearson correlation heatmaps. 
 
+![figure1](https://github.com/user-attachments/assets/094efe38-67d0-4fed-88e2-89afc441949f)
+
+These correlations suggest that nearby variables exhibit higher inter-variable dependencies, which are essential for effective imputation.Moreover, a significant challenge arises from the random distribution of missing values. While traditional Transformer models utilize attention mechanisms to capture relationships across sequences, their performance is hindered by the unpredictable nature of missing data, leading to inefficiencies and reduced accuracy. PGConvNet addresses these issues by leveraging a two-stage convolutional architecture that adapts dynamically to missing values, ensuring accurate and efficient imputation even under high missing rates.
+
+
+
+🔎🔎🔎PGConvNet is a state-of-the-art model that leverages a two-stage architecture to effectively capture temporal and inter-variable dependencies. By transforming 1D time series data into a 2D representation, it enhances the model's ability to process complex interactions across multiple variables, ensuring robust imputation performance.
 
 ## Component Overview
 
@@ -22,7 +32,9 @@ The PGCBlock dynamically adapts to the random positioning of missing values by e
 
 ## Results
 PGConvNet has demonstrated consistent state-of-the-art performance in time series imputation tasks, significantly outperforming existing models, particularly under high rates of missing data.
-![image](https://github.com/user-attachments/assets/8d81e0a3-1a3a-4893-8e1b-6219c793295f)
+
+![Result](https://github.com/user-attachments/assets/db35c827-57b2-4ce7-80dc-e66ea2f5992b)
+
 
 
 ## How to Begin
@@ -35,21 +47,6 @@ To use PGConvNet, follow these simple steps:
    ```bash
    bash PGConvNet/task_imputation/scripts//ETTh1/ETTh1.sh  
    ```
-Key Parameters
-Here are some key parameters you can customize:
-| Parameter         | Description                                                   |
-|-------------------|---------------------------------------------------------------|
-| `--num_blocks`    | Number of MSGBlock layers (default: 3)                       |
-| `--large_size`    | Size of the large kernel (1D) in MSGBlock (default: 3)      |
-| `--small_size`    | Size of the small kernel (1D) in MSGBlock (default: 1)      |
-| `--kernel_size`   | Size of the kernel (2D) in PGCBlock (default: 3)            |
-| `--num_experts`   | Number of experts in the model (default: 2)                  |
-| `--updim`         | Dimensionality expansion for each variable (default: 128)    |
-| `--mask_rate`     | Proportion of missing data (default: 0.125)                  |
-| `--batch_size`    | Number of samples per gradient update (default: 16)          |
-| `--learning_rate` | Learning rate for optimizer (default: 0.001)                  |
-| `--train_epochs`  | Number of training epochs (default: 100)                      |
-
 
 ## Acknowledgments
 😘😘😘We would like to extend our gratitude to the following repositories for their invaluable contributions to the code base and datasets:
