@@ -45,7 +45,7 @@ To use PGConvNet, follow these simple steps:
    ```
    **Run the Code**: Following command for your dataset (for example, using ETTh1):
    ```bash
-   bash PGConvNet/task_imputation/scripts//ETTh1/ETTh1.sh  
+   bash PGConvNet/scripts/ETTh1.sh  
    ```
 
 ## Acknowledgments
