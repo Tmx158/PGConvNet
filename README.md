@@ -39,7 +39,9 @@ PGConvNet has demonstrated consistent state-of-the-art performance in time serie
 
 ## How to Begin
 To use PGConvNet, follow these simple steps:
-   **Install Dependencies**: First, install the necessary packages by running:
+
+   **Download the Dataset**: First, download the dataset file `all_datasets.zip` from the Baidu Netdisk link: [https://pan.baidu.com/s/1z_EZfKehfqqZvlum1BtcNA?pwd=etr6](https://pan.baidu.com/s/1z_EZfKehfqqZvlum1BtcNA?pwd=etr6). Then, extract it directly into the root directory of PGConvNet.
+   **Install Dependencies**: install the necessary packages by running:
    ```bash
    pip install -r requirements.txt
    ```
