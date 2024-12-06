@@ -10,13 +10,17 @@ PGConvNet addresses these issues by leveraging a two-stage convolutional archite
 By transforming 1D time series data into a 2D representation, it enhances the model's ability to process complex interactions across multiple variables, ensuring robust imputation performance.
 
 
-To use PGConvNet, follow these simple steps: Install Dependencies: First, install the necessary packages by running:
+To use PGConvNet, follow these simple steps:
+
+Download the Dataset: First, download the dataset file all_datasets.zip from the Baidu Netdisk link: https://pan.baidu.com/s/1z_EZfKehfqqZvlum1BtcNA?pwd=etr6. Then, extract it directly into the root directory of PGConvNet.
+
+Install Dependencies: Install the necessary packages by running:
 
 pip install -r requirements.txt
 
-Run the Code: Following command for your dataset (for example, using ETTh1):
+Run the Code: Use the following command for your dataset (for example, using ETTh1):
 
-bash PGConvNet/scripts/ETTh1.sh  
+bash PGConvNet/scripts/ETTh1.sh
 
 
 😘😘😘We would like to extend our gratitude to the following repositories for their invaluable contributions to the code base and datasets:
